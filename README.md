@@ -29,9 +29,9 @@ the project from Udacity for learning about the Jasmine and how to write test
 
 
 ## Installing From Source
- - [Clone](https://github.com/halima992/frontendArcadGame) the Repository 
+ - [Clone](https://github.com/halima992/frontendFeedReader) the Repository 
  - load `index.html` in your browser
- - see the test 
+ - see the Jasmine test 
 
 ## Author
 Haliam Josh 
