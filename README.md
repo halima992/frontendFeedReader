@@ -1,4 +1,4 @@
-# frontendFeedReader
+# frontend Feed Reader
 ## Table of Contents
 
 * [Feed Reader](#feed-reader)
