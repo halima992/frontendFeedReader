@@ -84,10 +84,11 @@ $(function() {
     describe('New Feed Selection', function() {
         let newValue,
             oldValue;
-        beforeEach(function(done) {
+        beforeEach(function() {
             loadFeed(0, function() {
                 //the all feeds are assigned to oldValue 
                 oldValue = document.querySelector('.feed').innerHTML;
+				done();
                 // the new feed is loaded by loadFeed function 
                 loadFeed(1, done);
             });
