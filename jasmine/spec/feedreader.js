@@ -105,12 +105,15 @@ $(function() {
      * by the loadFeed function that the content actually changes.
      * Remember, loadFeed() is asynchronous.
      */
-    let newValue,
+       let newValue,
         oldValue;
     describe('New Feed Selection', function() {
         beforeEach(function(done) {
-            oldValue = loadFeed(0, done);
-            loadFeed(1, done);
+            loadFeed(0, function(){
+			 oldValue =	document.querySelector('.feed').innerHTML;
+			 loadFeed(1, done);
+			});
+            
         });
         it('add new Feed', function() {
             newValue = document.querySelector('.feed').innerHTML;
